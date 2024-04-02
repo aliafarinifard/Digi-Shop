@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.MuiDataGrid-columnHeaderTitle {
+    font-family: __vazir_f0d1a5;
+    font-size: 0.8rem;
+}
+
+.MuiDataGrid-menuList {
+    direction: ltr;
+}

@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDpxijusMDFsVDgdj_WIx8Q-R5e-wxtz2Q",
-  authDomain: "e-shop-kala-b4b57.firebaseapp.com",
-  projectId: "e-shop-kala-b4b57",
-  storageBucket: "e-shop-kala-b4b57.appspot.com",
-  messagingSenderId: "402633552271",
-  appId: "1:402633552271:web:d898e8a6b0a60d55039bfa"
+  apiKey: "AIzaSyB9M71RAdwjoI82g0L0mq4uGYqkleUtSoc",
+  authDomain: "digi-shop-kala.firebaseapp.com",
+  projectId: "digi-shop-kala",
+  storageBucket: "digi-shop-kala.appspot.com",
+  messagingSenderId: "1050600643598",
+  appId: "1:1050600643598:web:18cade09bd99a37647f05f"
 };
 
 // Initialize Firebase

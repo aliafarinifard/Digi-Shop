@@ -12,7 +12,7 @@
     direction: ltr;
 }
 
-.___swiper-buttons {
+/* .___swiper-buttons {
     display: none;
     opacity: 0;
 }
@@ -21,4 +21,4 @@
     display: flex;
     opacity: 1;
     transition: opacity 0.4s linear 0s;
-}
+} */

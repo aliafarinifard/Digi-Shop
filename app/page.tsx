@@ -7,6 +7,7 @@ import ProductCard from "./components/products/ProductCard";
 import getProducts from "@/actions/getProducts";
 import { IProductParams } from "@/actions/getProducts";
 import NullData from "./components/NullData";
+import Slides from "./components/slides/Slides";
 
 
 interface HomeProps {
@@ -37,7 +38,11 @@ export default async function Home({ searchParams }: HomeProps) {
 
     return (
         <div>
-            <div className="pt-8 px-4 xl:px-[6.8rem] md:px-10">
+            <div dir="ltr" className="pb-1">
+                <Slides />
+            </div>
+
+            <div className="pt-2 px-4 xl:px-[6.8rem] md:px-10">
                 <HomeBanner />
             </div>
             <div className="p-8">

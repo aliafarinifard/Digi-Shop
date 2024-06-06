@@ -11,3 +11,14 @@
 .MuiDataGrid-menuList {
     direction: ltr;
 }
+
+.___swiper-buttons {
+    display: none;
+    opacity: 0;
+}
+
+.___swiper-container:hover .___swiper-buttons {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.4s linear 0s;
+}

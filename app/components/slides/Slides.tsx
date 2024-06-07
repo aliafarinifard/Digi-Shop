@@ -23,23 +23,15 @@ const Slides = () => {
 
     const swiperRef = useRef<SwiperType>();
 
-    const bullet = 'bg-dark'
-
     return (
         <div className="relative ___swiper-container">
             <Swiper
                 grabCursor
                 loop
-                // pagination={{
-                //     type: "bullets",
-                //     clickable: true,
-                //   }}
                 pagination={{
                     clickable: true,
-                    bulletClass: `swiper-pagination-bullet`,
-                    renderBullet: (index, className) => {
-                        return `<span class="${className='bg-black'} feature-pagination"></span>`;
-                    }
+                    el: '.swiper-pagination',
+                    type: 'bullets'
                 }}
                 onBeforeInit={(swiper) => {
                     swiperRef.current = swiper;
@@ -84,6 +76,8 @@ const Slides = () => {
                     <IoIosArrowForward />
                 </button>
             </div>
+
+            <div className="swiper-pagination" />
         </div>
     )
 }

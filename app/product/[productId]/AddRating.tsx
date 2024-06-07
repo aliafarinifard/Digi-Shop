@@ -47,10 +47,12 @@ const AddRating: React.FC<AddRatingProps> = ({ product, user }) => {
 
     const onSubmit: SubmitHandler<FieldValues> = async (data) => {
         setIsLoading(true);
+
         if (data.rating === 0) {
             setIsLoading(false);
-            return toast.error('امتیاز ثبت نشد!')
+            return toast.error('امتیاز ثبت نشد!');
         };
+
         const ratingData = { ...data, userId: user?.id, product: product };
 
         axios.post('/api/rating', ratingData).then(() => {
@@ -59,6 +61,7 @@ const AddRating: React.FC<AddRatingProps> = ({ product, user }) => {
             reset();
         }).catch((error) => {
             toast.error('خطایی رخ داده...');
+            console.log(error);
         }).finally(() => {
             setIsLoading(false);
         });

@@ -1,0 +1,11 @@
+{
+    "build": {
+      "env": {
+        "DATABASE_URL": "mongodb+srv://digishopkala:digishopkala@cluster0.fk2s51a.mongodb.net/digi-shop-kala"
+      }
+    },
+    "rewrites": [
+      { "source": "/api/(.*)", "destination": "/api" }
+    ]
+  }
+  
